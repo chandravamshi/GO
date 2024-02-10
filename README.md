@@ -1,3 +1,5 @@
+![Go Logo](https://blog.golang.org/go-brand/Go-Logo/PNG/Go-Logo_Blue.png){width=100px}
+
 # Go: Learning Go from Beginner to Advanced
 
 Welcome to my Go Journey repository! This is where I document my progress as I learn Go programming from the basics to advanced topics.
