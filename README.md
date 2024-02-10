@@ -7,7 +7,11 @@ Welcome to my Go Journey repository! This is where I document my progress as I l
 This repository is organized into folders representing different levels of difficulty, from basic to advanced. Each folder contains code examples, projects, and accompanying notes to help reinforce my understanding of Go programming concepts.
 
 ## GO Resources
-* https://quii.gitbook.io/learn-go-with-tests/
+* Learn Go with Tests - https://quii.gitbook.io/learn-go-with-tests/
+* Great for learning syntax - https://learnxinyminutes.com/docs/go/
+* Effective Go (a must read) - https://go.dev/doc/effective_go
+* Hands-On Software Engineering with Golang: Move beyond basic programming to design and build reliable software with clean code (ISBN 13: 978-1838554491) by Achilleas Anagnostopoulos
+* The Go Programming Language
 
 ## Folder Structure
 
