@@ -6,6 +6,9 @@ Welcome to my Go Journey repository! This is where I document my progress as I l
 
 This repository is organized into folders representing different levels of difficulty, from basic to advanced. Each folder contains code examples, projects, and accompanying notes to help reinforce my understanding of Go programming concepts.
 
+## GO Leraning Resources
+* https://quii.gitbook.io/learn-go-with-tests/
+
 ## Folder Structure
 
 - **Basics**: Contains fundamental concepts and syntax of Go programming.
