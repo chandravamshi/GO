@@ -12,6 +12,10 @@ This repository is organized into folders representing different levels of diffi
 * Effective Go (a must read) - https://go.dev/doc/effective_go
 * Hands-On Software Engineering with Golang: Move beyond basic programming to design and build reliable software with clean code (ISBN 13: 978-1838554491) by Achilleas Anagnostopoulos
 * The Go Programming Language
+* https://go.dev/tour/welcome/1
+* https://gobyexample.com/
+* https://lets-go.alexedwards.net/
+* https://lets-go-further.alexedwards.net/
 
 ## Folder Structure
 
