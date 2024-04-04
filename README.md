@@ -72,3 +72,95 @@ To start learning Go, you can follow the official [Go documentation](https://gol
 
 Happy coding!
 
+
+---
+
+## Basics
+
+---
+
+### Go Variables and Data Types
+
+* Introduction
+
+In Go programming language, variables are used to store data values. These values can be of different types, such as integers, floats, strings, booleans, and complex numbers. Understanding variables and data types is fundamental to writing Go programs efficiently.
+
+* Why Variables and Data Types?
+
+  - **Organization**: Variables allow us to organize and manage data effectively within a program.
+  - **Flexibility**: Different data types provide flexibility in storing and manipulating various kinds of information.
+  - **Readability**: Proper use of variables and data types improves the readability and maintainability of code.
+
+* Advantages
+
+  1. **Type Safety**: Go is a statically typed language, which means variables must be declared with a specific type. This helps catch errors at compile-time rather than runtime.
+  2. **Efficiency**: Strongly typed variables contribute to efficient memory usage and faster execution of programs.
+  3. **Clarity**: Explicitly declaring variables with their data types enhances code clarity and reduces ambiguity.
+
+* Problems Solved
+
+  - **Type Errors**: By enforcing strict typing, Go prevents common type-related errors, such as mismatched data assignments.
+  - **Memory Management**: Proper use of data types aids in efficient memory management, reducing the risk of memory leaks and improving performance.
+  - **Data Integrity**: Strong typing ensures data integrity by enforcing consistent usage of variables throughout the program.
+
+* Disadvantages
+
+  1. **Initialization Overhead**: Explicitly declaring variables with types may require additional initialization steps, leading to slightly more verbose code.
+  2. **Learning Curve**: Understanding and managing data types effectively may pose a learning curve for beginners.
+
+* Behind the Scenes
+
+  - **Type Inference**: Go supports type inference, allowing the compiler to deduce variable types based on context. This reduces the need for explicit type declarations in some cases.
+  - **Memory Allocation**: Each variable's data type influences the amount of memory allocated for storage. Understanding this allocation process is crucial for optimizing memory usage.
+
+**Getting Started**
+
+To declare a variable in Go, you use the `var` keyword followed by the variable name and its data type:
+
+```go
+var age int // declares an integer variable named 'age'
+```
+
+You can also use short variable declaration syntax:
+
+```go
+name := "John" // declares a string variable named 'name' and initializes it
+```
+
+**Examples**
+
+**Integer Variables**
+
+```go
+var num int = 10
+```
+
+**Float Variables**
+
+```go
+var pi float64 = 3.14
+```
+
+**String Variables**
+
+```go
+var message string = "Hello, World!"
+```
+
+**Boolean Variables**
+
+```go
+var isTrue bool = true
+```
+
+### Complex Number Variables
+
+```go
+var comp complex128 = complex(2, 3)
+```
+
+Conclusion
+
+Understanding variables and data types is fundamental to Go programming. By mastering these concepts, you'll be able to write robust and efficient code.
+
+---
