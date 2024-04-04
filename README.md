@@ -82,7 +82,7 @@ Happy coding!
 
 * Introduction
 
-In Go programming language, variables are used to store data values. These values can be of different types, such as integers, floats, strings, booleans, and complex numbers. Understanding variables and data types is fundamental to writing Go programs efficiently.
+  In Go programming language, variables are used to store data values. These values can be of different types, such as integers, floats, strings, booleans, and complex numbers. Understanding variables and data types is fundamental to writing Go programs efficiently.
 
 * Why Variables and Data Types?
 
