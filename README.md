@@ -77,7 +77,6 @@ Happy coding!
 
 ## Basics
 
----
 
 ### Go Variables and Data Types
 
