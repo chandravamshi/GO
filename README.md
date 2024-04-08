@@ -499,6 +499,7 @@ In this example, we have a package named `utils`. This package contains a functi
 By using packages, you can organize your code into logical units, promote code reuse, and improve maintainability. The `package main` declaration is specifically used for creating executable programs, while other package declarations are used for organizing code into reusable units.
 
 **Package Name**
+
 In Go, the package name declared at the top of a file does not necessarily have to match the file name. However, it's a best practice to keep them consistent for clarity and maintainability.
 
 Here are the rules regarding package names and file names in Go:
