@@ -498,4 +498,20 @@ In this example, we have a package named `utils`. This package contains a functi
 
 By using packages, you can organize your code into logical units, promote code reuse, and improve maintainability. The `package main` declaration is specifically used for creating executable programs, while other package declarations are used for organizing code into reusable units.
 
+**Package Name**
+In Go, the package name declared at the top of a file does not necessarily have to match the file name. However, it's a best practice to keep them consistent for clarity and maintainability.
+
+Here are the rules regarding package names and file names in Go:
+
+1. **Package Name**: The package name declared at the top of a Go file is used to identify the package and must be unique within the module. It's recommended to use a meaningful and descriptive name that reflects the purpose of the package.
+
+2. **File Name**: The file name should be lowercase and should match the package name declared in the file. If the package name is `main`, indicating that the file is intended to be compiled into an executable program, then the file should be named `main.go`. For other packages, the file name should match the package name.
+
+   - For example, if the package name is `utils`, the file should be named `utils.go`.
+   - If the package name is `config`, the file should be named `config.go`.
+
+By following this convention, it becomes easier to understand the relationship between files and packages in your codebase. Additionally, it helps other developers quickly locate and understand the purpose of each file and package.
+
+While it's not strictly required for the package name to match the file name, deviating from this convention can lead to confusion and make your code harder to navigate. Therefore, it's generally a good practice to keep them consistent.
+
 ---
