@@ -449,3 +449,53 @@ func main() {
 In this setup, the application reads the `APP_ENV` environment variable to determine the environment (e.g., "development", "production", "staging"). Based on the environment, it loads the corresponding configuration using the appropriate `LoadConfig` function from the respective configuration file. This approach allows you to manage different configurations easily across various environments.
 
 ---
+
+
+### Package
+
+What the `package main` declaration at the top of a Go file and other package declarations mean:
+
+**1. `package main`:**
+
+In Go, a package is a way to organize and reuse code. Every Go file belongs to a package, and the package declaration must be the first non-comment statement in the file.
+
+- **`package main`**: When you see `package main` at the top of a Go file, it means that the code in that file is intended to be compiled into an executable program. In Go, the package named `main` is special; it serves as the entry point for executable programs. When you run a Go program, the `main` function in the `main` package is executed first.
+
+**Example:**
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, world!")
+}
+```
+
+In this example, we have a simple Go program that prints "Hello, world!". The `package main` declaration indicates that this code is intended to be compiled into an executable program. The `main` function serves as the entry point for the program.
+
+**2. Other Package Declarations:**
+
+In addition to the `main` package, Go allows you to create and use other packages to organize your code. These packages can be imported and used in other Go files.
+
+**Example:**
+```go
+package utils
+
+import "fmt"
+
+func SayHello() {
+    fmt.Println("Hello from utils package!")
+}
+```
+
+In this example, we have a package named `utils`. This package contains a function `SayHello` that prints a message. This package can be imported and used in other Go files within the same module.
+
+**Summary:**
+
+- `package main`: Indicates that the code in the file is intended to be compiled into an executable program. It contains the `main` function, which serves as the entry point for the program.
+- Other package declarations (`package <name>`): Used to organize and reuse code in separate files. These packages can contain functions, variables, and other types that can be imported and used in other Go files.
+
+By using packages, you can organize your code into logical units, promote code reuse, and improve maintainability. The `package main` declaration is specifically used for creating executable programs, while other package declarations are used for organizing code into reusable units.
+
+---
