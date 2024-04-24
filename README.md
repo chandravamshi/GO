@@ -972,3 +972,143 @@ func main() {
 In this example, we've integrated logging using the `logrus` library into a simple Go API project built with the Gin framework. We initialize the logger in the `setupLogger` function, start logging in the `main` function, and log messages at various points in the code to record events.
 
 ---
+
+### JSON
+
+In Go, `marshal` and `unmarshal` refer to the processes of converting Go data structures to and from JSON format, respectively. These processes are essential for encoding and decoding data when working with JSON in Go.
+
+1. **Marshal**:
+   - `Marshal` is the process of converting Go data structures, such as structs, maps, slices, and primitives, into a JSON-encoded byte slice.
+   - The `json.Marshal()` function in the `encoding/json` package is used to marshal Go data structures into JSON format.
+   - It recursively traverses the data structure and converts each field into its JSON representation.
+
+   Example:
+   ```go
+   import "encoding/json"
+
+   type Person struct {
+       Name string `json:"name"`
+       Age  int    `json:"age"`
+   }
+
+   func main() {
+       person := Person{Name: "John", Age: 30}
+       jsonData, err := json.Marshal(person)
+       if err != nil {
+           panic(err)
+       }
+       fmt.Println(string(jsonData)) // Output: {"name":"John","age":30}
+   }
+   ```
+
+2. **Unmarshal**:
+   - `Unmarshal` is the process of converting JSON data into Go data structures.
+   - The `json.Unmarshal()` function in the `encoding/json` package is used to unmarshal JSON data into Go data structures.
+   - It takes a JSON-encoded byte slice as input and populates the provided Go data structure with the decoded values.
+
+   Example:
+   ```go
+   import "encoding/json"
+
+   type Person struct {
+       Name string `json:"name"`
+       Age  int    `json:"age"`
+   }
+
+   func main() {
+       jsonData := []byte(`{"name":"Alice","age":25}`)
+       var person Person
+       err := json.Unmarshal(jsonData, &person)
+       if err != nil {
+           panic(err)
+       }
+       fmt.Println(person.Name) // Output: Alice
+       fmt.Println(person.Age)  // Output: 25
+   }
+   ```
+
+Using `marshal` and `unmarshal`, you can easily serialize Go data structures into JSON for storage or transmission and deserialize JSON data back into Go data structures for processing within your Go programs. These functions provide a convenient way to work with JSON data in Go applications.
+
+Let's break down encoding and decoding JSON in Go, step by step, with clear examples:
+
+1. Encoding JSON:
+
+Step 1: Import the `encoding/json` Package:
+```go
+import "encoding/json"
+```
+
+Step 2: Define a Go Data Structure:
+```go
+type Person struct {
+    Name string `json:"name"`
+    Age  int    `json:"age"`
+}
+```
+
+Step 3: Create an Instance of the Data Structure:
+```go
+person := Person{Name: "John", Age: 30}
+```
+
+Step 4: Marshal the Data Structure to JSON:
+```go
+jsonData, err := json.Marshal(person)
+if err != nil {
+    panic(err)
+}
+```
+
+Step 5: Print the JSON Data:
+```go
+fmt.Println(string(jsonData)) // Output: {"name":"John","age":30}
+```
+
+2. Decoding JSON:
+
+Step 1: Import the `encoding/json` Package:
+```go
+import "encoding/json"
+```
+
+Step 2: Define a Go Data Structure:
+```go
+type Person struct {
+    Name string `json:"name"`
+    Age  int    `json:"age"`
+}
+```
+
+Step 3: Define JSON Data:
+```go
+jsonData := []byte(`{"name":"Alice","age":25}`)
+```
+
+Step 4: Create a Variable to Hold Decoded Data:
+```go
+var person Person
+```
+
+Step 5: Unmarshal the JSON Data into the Variable:
+```go
+err := json.Unmarshal(jsonData, &person)
+if err != nil {
+    panic(err)
+}
+```
+
+Step 6: Access the Decoded Data:
+```go
+fmt.Println(person.Name) // Output: Alice
+fmt.Println(person.Age)  // Output: 25
+```
+
+Summary:
+- **Encoding**: Involves converting Go data structures into JSON format using `json.Marshal()`.
+- **Decoding**: Involves converting JSON data into Go data structures using `json.Unmarshal()`.
+- **Importance**: Encoding and decoding JSON data is essential for interoperability with other systems, such as web APIs, and for storing or transmitting data in JSON format.
+- **Error Handling**: Always handle errors returned by `json.Marshal()` and `json.Unmarshal()` to gracefully handle potential issues during encoding and decoding processes.
+
+By following these steps and understanding the principles behind encoding and decoding JSON in Go, you'll be able to effectively work with JSON data in your Go applications.
+
+---
