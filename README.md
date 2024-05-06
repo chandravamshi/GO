@@ -1116,9 +1116,11 @@ By following these steps and understanding the principles behind encoding and de
 ### Maps in Go
 
 **Introduction**
+
 Maps are a powerful built-in data structure in Go used to store key-value pairs. They provide an efficient way to look up values based on keys.
 
 **Declaring a Map**
+
 To declare a map, you specify the key and value types within square brackets ([]), like this:
 ```go
 var myMap map[string]int
@@ -1126,6 +1128,7 @@ var myMap map[string]int
 This declares a map where the keys are of type string and the values are of type int.
 
 **Initializing a Map**
+
 Maps in Go must be initialized before use. You can do this using the `make` function:
 ```go
 myMap := make(map[string]int)
@@ -1137,6 +1140,7 @@ myMap := map[string]int{"apple": 5, "banana": 10, "orange": 7}
 This creates a map with initial key-value pairs.
 
 **Accessing and Modifying Values**
+
 You can access and modify values in a map using square brackets with the key:
 ```go
 fmt.Println(myMap["apple"]) // Output: 5
@@ -1145,6 +1149,7 @@ fmt.Println(myMap["apple"]) // Output: 6
 ```
 
 **Checking for Existence**
+
 You can check if a key exists in a map using the following syntax:
 ```go
 value, exists := myMap["apple"]
@@ -1156,12 +1161,14 @@ if exists {
 ```
 
 **Deleting Key-Value Pairs**
+
 To delete a key-value pair from a map, you use the `delete` function:
 ```go
 delete(myMap, "apple")
 ```
 
 **Iterating Over a Map**
+
 You can iterate over a map using a for loop with range:
 ```go
 for key, value := range myMap {
@@ -1170,9 +1177,11 @@ for key, value := range myMap {
 ```
 
 ## Behind the Scenes
+
 Internally, maps in Go are implemented as hash tables, which allow for fast lookups based on keys. When you access or modify a value in a map, Go calculates the hash of the key to determine its location in memory.
 
 **Conclusion**
+
 Maps are versatile data structures in Go that allow you to efficiently store and retrieve key-value pairs. With the knowledge gained from this guide, you should be able to confidently use maps in your Go programs.
 
 ---
